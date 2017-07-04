@@ -8,7 +8,7 @@
 html, body{
 	margin: 0;
 	color:#eee;
-	height: 100%;
+	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 
 }
@@ -40,19 +40,23 @@ html, body{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
+	visibility: hidden;
 }
 
 .scrollbar-style-1::-webkit-scrollbar
 {
-	width: 6px;
-	background-color: #F5F5F5;
+	/*width: 6px;*/
+	width: 10px;
+	background-color: #c0c0c0;
+	/*visibility: hidden;*/
 }
 
 .scrollbar-style-1::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #343B80;
+	background-color: #6f759d;
+	/*background-color: #19217a;*/
 }
 
 
@@ -62,26 +66,36 @@ html, body{
 /*==================*/
 
 
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 /* ASIDE */
 /*==================*/
 aside{
-	background-color: #283593;
-	padding: 15px 0px;
-	width: 320px;
+	/*background-color: #283593;*/
+	/*background-color: #3d478e;*/
+	background-color: #4c506d;
+	padding: 22px 0px 10px;
+	/*width: 320px;*/
+	width: 24%;
 	height: 100vh;
-	overflow-x: hidden
-
+	overflow-x: hidden;
+	float: left;
 }
 
 
 .search{
-	background-color: #303f9f ;
-	padding: 5px 15px;
-	margin: 0 0 0 15px;
+	/*background-color: #303f9f ;*/
+	background-color: #494f77;
+	background-color: #727697;
+	padding: 5px 15px 5px;
+	margin: 0 0 15px 15px;
 	width: 90%;
+    border-radius: 4px;
 }
 .search input{
 	background-color: transparent;
@@ -89,6 +103,8 @@ aside{
 	height: 25px;
 	color: inherit;
 	width: 85%;
+	outline: none;
+
 }
 .fa-search{
 	color: #ccc;
@@ -96,6 +112,9 @@ aside{
 }
 
 
+.online-users{
+	/*border-top: 1px solid #bfbfbf;*/
+}
 .user{
 	padding: 18px 15px;
 	width: 100%;
@@ -106,15 +125,14 @@ aside{
 	cursor: pointer;
 }
 
-.user img, .user .img{
+.img{
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
 	display: inline-block;
-}
-.user .img{
 	margin-top: 5px;
 	margin-right: 8px;
+
 
 /*	--webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 	--moz-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -145,7 +163,8 @@ aside{
 .user .name{
 	font-weight: 700;
 }
-.user .date{
+
+.date{
 	font-size: 12px;
 	float: right;
     margin-top: 5px;
@@ -170,6 +189,136 @@ aside{
 	position: absolute;
 	top: 50%;
 	right: 10px;
+}
+
+
+
+
+/* CHAT BOX */
+/*======================*/
+
+
+.chat-box{
+	float: right;
+	width: 76%;
+	height: 100vh;
+	background-color: white;
+	position: relative;	
+}
+
+.chat-head{
+	height: 70px;
+	border-bottom: 1px solid #E5E5E5;
+    padding-top: 20px;
+}
+
+.chat-head .title{
+	margin: 0;
+	color: #111;
+}
+
+.allmsgs{
+	list-style: none;
+	/*height: 75vh;*/
+	height: 77.9%;
+	overflow-x: hidden;
+	margin: 0;
+	padding-bottom: 15px;
+}
+.msg{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.msg .img{
+	vertical-align: bottom;
+    margin-bottom: 8px;
+}
+.msg-container{
+	display: inline-block;
+    vertical-align: super;
+
+}
+.msg .name{
+	margin: 0;
+
+}
+
+.msg-data{
+	width: 80%;
+	font-size: 14px;
+	line-height: 1.5;
+    display: inline-block;
+    margin: 0;
+	padding: 15px;
+	border-radius: 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	vertical-align: middle;
+	color: black;
+	background-color: #F1F0F0;
+}
+
+
+.chat-footer{
+	width: 100%;
+	background-color: #F9F9F9;
+	/*background-color: #1b1e31;*/
+	min-height: 71px;
+	max-height: 22vh;
+	padding-top: 17px;
+	padding-bottom:  15px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+.chat-box-wrapper{
+    width: 90%;
+    position: absolute;
+	bottom: 11%;
+	left: 5%;
+	overflow: auto
+}
+.msg-box{
+	width: 80%;
+	min-height: 40px;
+	max-height: 103px;
+	height: 47px;
+	display: inline-block;
+
+
+	padding: 10px;
+	margin-left: 5px;
+	margin-right:  5px;
+	vertical-align: middle;
+
+	border: 1px solid grey;
+	color: black;
+	background-color: white;
+	text-align: left;
+	
+
+
+	/*resize:vertical;*/
+	resize:none;
+	overflow-x: hidden;
+/*		
+		position: absolute;
+	    bottom: 0;
+	    left: 5%;
+
+*/	
+}
+
+.emoticons{
+	color: grey;
+	font-size: 1.7em;
+}
+
+
+
+.chat-box-container{
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 
