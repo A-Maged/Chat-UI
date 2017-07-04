@@ -250,7 +250,7 @@ aside:hover{
 }
 
 .msg-data{
-	width: 80%;
+	max-width: 80%;
 	font-size: 14px;
 	line-height: 1.5;
     display: inline-block;
