@@ -9,8 +9,8 @@ html, body{
 	margin: 0;
 	color:#eee;
 	height: 100vh;
-	font-family: 'Open Sans', sans-serif;
-
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1.4px;
 }
 
 
@@ -166,7 +166,7 @@ aside:hover{
 	margin: 0;
 }
 .user .name{
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 15px;	
 }
 
@@ -179,13 +179,15 @@ aside:hover{
 
 
 .user .msg-excerpt{
-	font-size: 13px;
+	font-size: 12px;
 	margin: 0;
     color: #ccc;
 
 }
 
-
+.active-user .name{
+	font-weight: 700;
+}
 .active-user:after{
 	content: "";
 	width: 11px;
@@ -195,6 +197,11 @@ aside:hover{
 	position: absolute;
 	top: 50%;
 	right: 10px;
+}
+
+.active-conversation{
+	background-color: #1a237e ;
+
 }
 
 
@@ -252,7 +259,9 @@ aside:hover{
 .msg-data{
 	max-width: 80%;
 	font-size: 14px;
-	line-height: 1.5;
+	font-weight: 400;
+	font-family: inherit;
+	line-height: 19px;
     display: inline-block;
     margin: 0;
 	padding: 15px;
@@ -262,6 +271,7 @@ aside:hover{
 	vertical-align: middle;
 	color: black;
 	background-color: #F1F0F0;
+
 }
 
 
