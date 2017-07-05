@@ -240,8 +240,7 @@ aside{
 
 .allmsgs{
 	list-style: none;
-	/*height: 76.5%;*/
-	max-height: 76.5%;
+	height: 76.5%;
 	overflow-x: hidden;
 	margin: 0;
 	padding-bottom: 15px;
@@ -300,6 +299,8 @@ aside{
 	overflow-x: hidden;
 	vertical-align: middle;
     padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
