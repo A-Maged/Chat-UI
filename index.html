@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>material dddesign chat</title>
+	<title>material design chat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- font Awsome --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- google fonts --> <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
@@ -12,7 +12,6 @@
 <body>
 	
 <div class="container">
-
 
 
 	<aside class="scrollbar-style-1">
@@ -188,20 +187,13 @@
 		
 
 		<div class="chat-footer">
-			<div class="chat-box-wrapper">
-				<i class="fa fa-paperclip fa-lg emoticons" aria-hidden="true"></i>
+			<!-- <i class="fa fa-paperclip fa-lg emoticons" aria-hidden="true"></i> -->
 
-					<!-- 
-						onpaste
-						onkeydown
-						onkeyup
-						oninput
-					 -->
-					<textarea class="msg-box" onpaste="resizeMsgBox_onpast(event)" onkeydown="resizeMsgBox_newline(event)"  placeholder="type a message"></textarea>
-
-				<i class="fa fa-smile-o fa-lg emoticons" aria-hidden="true"></i>
-
-			</div><!-- end .chat-box-wrapper -->
+			<textarea onkeydown="resizeMsgBox(event)" class="msg-box">
+											
+			</textarea>
+	
+			<!-- <i class="fa fa-smile-o fa-lg emoticons" aria-hidden="true"></i> -->
 		</div>
 
 
