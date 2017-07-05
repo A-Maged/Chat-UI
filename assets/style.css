@@ -11,6 +11,7 @@ html, body{
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.4px;
+	position: relative;
 }
 
 
@@ -65,7 +66,12 @@ html, body{
 /* CUSTOM*/
 /*==================*/
 
-
+.container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -83,7 +89,7 @@ aside{
 	padding-bottom: 10px;
 	/*width: 320px;*/
 	width: 24%;
-	height: 100vh;
+	height: 100%;
 	float: left;
 	/*overflow: hidden;*/
 	overflow-x: hidden;
@@ -216,13 +222,13 @@ aside{
 .chat-box{
 	float: right;
 	width: 76%;
-	height: 100vh;
+	height: 100%;
 	background-color: white;
 	position: relative;	
 }
 
 .chat-head{
-	height: 70px;
+	height: 12%;
 	border-bottom: 1px solid #E5E5E5;
     padding-top: 20px;
 }
@@ -234,8 +240,8 @@ aside{
 
 .allmsgs{
 	list-style: none;
-	/*height: 75vh;*/
-	height: 77.9%;
+	/*height: 76.5%;*/
+	max-height: 76.5%;
 	overflow-x: hidden;
 	margin: 0;
 	padding-bottom: 15px;
@@ -279,16 +285,21 @@ aside{
 
 .chat-footer{
 	width: 100%;
-	height: 71px;
-	background-color: grey;
+	height: 11.5%;
+	background-color: #F9F9F9;
 	padding: 15px 0;
 	text-align: center;
+	padding-top: 17px;
+    padding-bottom: 15px;
 }
 
 .msg-box{
 	width: 80%;
+	height: 42px;
 	max-height: 100px;
 	overflow-x: hidden;
+	vertical-align: middle;
+    padding: 10px;
 }
 
 

@@ -8,11 +8,16 @@
 
 
 
-function resizeMsgBox(e){
-	if(e.keyC){
-
+function handEnter(e){
+	if (e.keyCode == 13 && !e.shiftKey){
+		e.preventDefault()
+		console.log('sent')
 	}
 }
 
+
+
+
 // TODO
-	// resizeMsgBox_ondelet()
+	// resizeMsgBox_input()
+	// resizeMsgBox_onDelete()
