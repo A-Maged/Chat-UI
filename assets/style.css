@@ -11,6 +11,7 @@ html, body{
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.4px;
+	position: relative;
 }
 
 
@@ -65,7 +66,12 @@ html, body{
 /* CUSTOM*/
 /*==================*/
 
-
+.container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -83,7 +89,7 @@ aside{
 	padding-bottom: 10px;
 	/*width: 320px;*/
 	width: 24%;
-	height: 100vh;
+	height: 100%;
 	float: left;
 	/*overflow: hidden;*/
 	overflow-x: hidden;
@@ -216,13 +222,13 @@ aside{
 .chat-box{
 	float: right;
 	width: 76%;
-	height: 100vh;
+	height: 100%;
 	background-color: white;
 	position: relative;	
 }
 
 .chat-head{
-	height: 70px;
+	height: 12%;
 	border-bottom: 1px solid #E5E5E5;
     padding-top: 20px;
 }
@@ -234,8 +240,7 @@ aside{
 
 .allmsgs{
 	list-style: none;
-	/*height: 75vh;*/
-	height: 77.9%;
+	height: 76.5%;
 	overflow-x: hidden;
 	margin: 0;
 	padding-bottom: 15px;
@@ -279,54 +284,25 @@ aside{
 
 .chat-footer{
 	width: 100%;
+	height: 11.5%;
 	background-color: #F9F9F9;
-	/*background-color: #1b1e31;*/
-	min-height: 71px;
-	max-height: 22vh;
-	padding-top: 17px;
-	padding-bottom:  15px;
+	padding: 15px 0;
 	text-align: center;
-	position: absolute;
-	bottom: 0;
-	border-top: 1px solid #EBEBEB;
+	padding-top: 17px;
+    padding-bottom: 15px;
 }
-.chat-box-wrapper{
-    width: 90%;
-    position: absolute;
-	bottom: 11%;
-	left: 5%;
-	overflow: auto
-}
+
 .msg-box{
 	width: 80%;
-	min-height: 40px;
-	max-height: 103px;
 	height: 42px;
-	display: inline-block;
-
-
-	padding: 10px;
-	margin-left: 5px;
-	margin-right:  5px;
-	vertical-align: middle;
-
-	border: 1.5px solid #DDDDDD;
-	color: black;
-	background-color: white;
-	text-align: left;
-	
-
-
-	/*resize:vertical;*/
-	resize:none;
+	max-height: 100px;
 	overflow-x: hidden;
-/*		
-		position: absolute;
-	    bottom: 0;
-	    left: 5%;
-
-*/	
+	vertical-align: middle;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
 
 .emoticons{
 	color: grey;
