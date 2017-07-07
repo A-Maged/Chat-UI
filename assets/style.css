@@ -87,7 +87,6 @@ aside{
 	background-color: #4c506d;
 	padding-top: 22px;
 	padding-bottom: 10px;
-	/*width: 320px;*/
 	width: 24%;
 	height: 100%;
 	float: left;
@@ -103,7 +102,7 @@ aside{
 */
 .search{
 	/*background-color: #303f9f ;*/
-	background-color: #494f77;
+	/*background-color: #494f77;*/
 	background-color: #727697;
 	padding: 5px 15px 5px;
 	margin: 0 0 15px 15px;
@@ -220,7 +219,8 @@ aside{
 
 
 .chat-box{
-	float: right;
+	/*float: right;*/
+	float: left;
 	width: 76%;
 	height: 100%;
 	background-color: white;

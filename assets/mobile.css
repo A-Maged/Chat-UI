@@ -1,0 +1,43 @@
+
+
+
+
+
+@media(max-width: 766px){ /*sm*/ 
+	aside{
+	    display: none;
+	}
+
+	.chat-box{
+		width: 100%;
+
+	}
+
+}
+
+
+@media(min-width: 768px){ /*sm*/ 
+
+	aside{
+	    width: 34%;
+	}
+
+
+	.chat-box{
+		width: 66%;
+
+	}
+
+}
+
+
+
+
+
+
+/* CUSTOM */
+/*=============================================*/
+
+
+
+
