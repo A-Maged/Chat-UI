@@ -21,10 +21,25 @@
 }
 
 
+/* the smallest mobiles*/
+@media(max-width: 320px){  
+
+	.msg-data {
+	     max-width: 76%; 
+	}
+
+	.chat-box-container {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+
+}
+
+
 
 @media(max-width: 442px){  
 
-	.show-menu{
+	.sm-toggle-menu{
 	    width: 80% ;
 	}
 
@@ -33,14 +48,14 @@
 
 @media (min-width: 443px) and (max-width: 621px){  
 
-	.show-menu{
+	.sm-toggle-menu{
 	    width: 65%;
 	}
 }
 
 
 @media(min-width: 622px){  
-	.show-menu{
+	.sm-toggle-menu{
 		width: 50%;
 	}
 }
@@ -73,21 +88,44 @@
 
 	}
 
+		
+	.search input{
+		width: 75%;
+	}
+
+
 }
 
 
+/* very larg screens*/
+@media(min-width: 1020px) {
+	aside{
+	    width: 28%;
+	}
+	.chat-box{
+	    width: 72%;
+	}
 
+}
 
 
 
 /* CUSTOM */
 /*=============================================*/
 
-.show-menu{
+.sm-toggle-menu{
     display: block;
 }
 
 
+.md-toggle-menu{
+	display: none;
+}
+
+
+.full-width{
+	width: 100%
+}
 
 
 

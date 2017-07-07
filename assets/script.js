@@ -22,7 +22,11 @@ $('.menu-icon').on('click', function() {
 
 	// if on mobile
 	if (Modernizr.mq('(max-width: 776px)')) {
-		$('aside').toggleClass('show-menu')
+		$('aside').toggleClass('sm-toggle-menu')
+	}
+	else{
+		$('aside').toggleClass('md-toggle-menu')
+		$('.chat-box').toggleClass('full-width')
 	}
 
 })
