@@ -240,6 +240,7 @@ aside{
 }
 .chat-head .menu-icon{
 	float: right;
+	cursor: pointer;
 }
 
 .allmsgs{

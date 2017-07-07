@@ -3,7 +3,7 @@
 
 
 
-@media(max-width: 766px){ /*sm*/ 
+@media(max-width: 776px){ /*sm*/ 
 	aside{
 	    display: none;
 	}
@@ -16,7 +16,7 @@
 }
 
 
-@media(min-width: 768px){ /*sm*/ 
+@media(min-width: 777px){ /*sm*/ 
 
 	aside{
 	    width: 34%;
