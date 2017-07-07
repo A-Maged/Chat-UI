@@ -5,7 +5,9 @@
 
 @media(max-width: 776px){ /*sm*/ 
 	aside{
-	    display: none;
+	    /*display: none;*/
+	    position: fixed;
+	    width: 40%;
 	}
 
 	.chat-box{

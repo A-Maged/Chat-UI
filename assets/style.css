@@ -219,8 +219,7 @@ aside{
 
 
 .chat-box{
-	/*float: right;*/
-	float: left;
+	float: right;
 	width: 76%;
 	height: 100%;
 	background-color: white;
