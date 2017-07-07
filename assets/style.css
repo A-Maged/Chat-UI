@@ -236,6 +236,10 @@ aside{
 .chat-head .title{
 	margin: 0;
 	color: #111;
+	display: inline-block;
+}
+.chat-head .menu-icon{
+	float: right;
 }
 
 .allmsgs{
