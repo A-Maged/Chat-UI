@@ -1,23 +1,66 @@
 
 
 
-
-
 @media(max-width: 776px){ /*sm*/ 
 	aside{
-	    /*display: none;*/
-	    position: fixed;
-	    width: 40%;
+	    display: none;
+    	position: fixed;
 	}
 
 	.chat-box{
 		width: 100%;
 
 	}
+	
+	.search input{
+		width: 75%;
+	}
+
+
 
 }
 
 
+
+@media(max-width: 442px){  
+
+	.show-menu{
+	    width: 80% ;
+	}
+
+}
+
+
+@media (min-width: 443px) and (max-width: 621px){  
+
+	.show-menu{
+	    width: 65%;
+	}
+}
+
+
+@media(min-width: 622px){  
+	.show-menu{
+		width: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*=========================================================================*/
+
+
+
+
+
+
+/* aside is visible*/
 @media(min-width: 777px){ /*sm*/ 
 
 	aside{
@@ -39,6 +82,11 @@
 
 /* CUSTOM */
 /*=============================================*/
+
+.show-menu{
+    display: block;
+}
+
 
 
 

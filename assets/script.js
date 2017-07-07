@@ -18,6 +18,17 @@ function handleEnter(e){
 
 
 
+$('.menu-icon').on('click', function() {
+
+	// if on mobile
+	if (Modernizr.mq('(max-width: 776px)')) {
+		$('aside').toggleClass('show-menu')
+	}
+
+})
+
+
+
 // TODO
 	// resizeMsgBox_input()
 	// resizeMsgBox_onDelete()
