@@ -58,7 +58,7 @@ input::-ms-input-placeholder {
   display: none; }
 
 .full-width {
-  width: 100%; }
+  width: 100% !important; }
 
 /* ASIDE */
 /*================== */
@@ -161,7 +161,7 @@ aside {
   height: 100%;
   background-color: white;
   position: relative; }
-  @media (min-width: 768px) {
+  @media (min-width: 577px) {
     .chat-box {
       width: 66%; } }
   @media (min-width: 992px) {
