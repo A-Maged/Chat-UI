@@ -9,7 +9,6 @@
 
 	.chat-box{
 		width: 100%;
-
 	}
 	
 	.search input{
@@ -28,11 +27,14 @@
 	     max-width: 76%; 
 	}
 
+	.msg-box{
+		width: 75%;
+	}
 	.chat-box-container {
 	    padding-left: 10px;
 	    padding-right: 10px;
 	}
-
+	
 }
 
 
