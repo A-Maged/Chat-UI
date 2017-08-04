@@ -221,17 +221,16 @@ aside {
     .chat-box .chat-footer > div {
       position: absolute;
       width: 100%;
-      top: 10%; }
+      height: 51%;
+      top: 26%; }
   .chat-box .msg-box {
     width: 80%;
-    height: 42px;
-    max-height: 100px;
-    /* overflow-x: hidden */
+    height: 100%;
     vertical-align: middle;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 5px; }
+    border: 1px solid black; }
     @media (max-width: 576px) {
       .chat-box .msg-box {
         width: 75%; } }
