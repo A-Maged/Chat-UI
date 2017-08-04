@@ -1,7 +1,5 @@
 
-
-
-@media(max-width: 776px){ /*sm*/ 
+@media(max-width: 776px){
 	aside{
 	    display: none;
     	position: fixed;
@@ -14,37 +12,14 @@
 	.search input{
 		width: 75%;
 	}
-
-
-
-}
-
-
-/* the smallest mobiles*/
-@media(max-width: 320px){  
-
-	.msg-data {
-	     max-width: 76%; 
-	}
-
-	.msg-box{
-		width: 75%;
-	}
-	.chat-box-container {
-	    padding-left: 10px;
-	    padding-right: 10px;
-	}
-	
 }
 
 
 
 @media(max-width: 442px){  
-
 	.sm-toggle-menu{
 	    width: 80% ;
 	}
-
 }
 
 
@@ -55,78 +30,10 @@
 	}
 }
 
-
 @media(min-width: 622px){  
 	.sm-toggle-menu{
 		width: 50%;
 	}
-}
-
-
-
-
-
-
-
-
-
-/*=========================================================================*/
-
-
-
-
-
-
-/* aside is visible*/
-@media(min-width: 777px){ /*sm*/ 
-
-	aside{
-	    width: 34%;
-	}
-
-
-	.chat-box{
-		width: 66%;
-
-	}
-
-		
-	.search input{
-		width: 75%;
-	}
-
-
-}
-
-
-/* very larg screens*/
-@media(min-width: 1020px) {
-	aside{
-	    width: 28%;
-	}
-	.chat-box{
-	    width: 72%;
-	}
-
-}
-
-
-
-/* CUSTOM */
-/*=============================================*/
-
-.sm-toggle-menu{
-    display: block;
-}
-
-
-.md-toggle-menu{
-	display: none;
-}
-
-
-.full-width{
-	width: 100%
 }
 
 
