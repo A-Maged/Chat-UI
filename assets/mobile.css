@@ -8,7 +8,7 @@
 	.chat-box{
 		width: 100%;
 	}
-	
+
 	.search input{
 		width: 75%;
 	}
@@ -16,25 +16,22 @@
 
 
 
-@media(max-width: 442px){  
+@media(max-width: 442px){
 	.sm-toggle-menu{
 	    width: 80% ;
 	}
 }
 
 
-@media (min-width: 443px) and (max-width: 621px){  
+@media (min-width: 443px) and (max-width: 621px){
 
 	.sm-toggle-menu{
 	    width: 65%;
 	}
 }
 
-@media(min-width: 622px){  
+@media(min-width: 622px){
 	.sm-toggle-menu{
 		width: 50%;
 	}
 }
-
-
-

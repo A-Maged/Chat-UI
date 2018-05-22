@@ -7,7 +7,7 @@ html, body {
   margin: 0;
   color: #eee;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 1.4px;
   position: relative; }
 
@@ -52,7 +52,7 @@ input::-ms-input-placeholder {
   clear: both; }
 
 .sm-toggle-menu {
-  display: block; }
+  transform: translateX(0%); }
 
 .md-toggle-menu {
   display: none; }
@@ -63,15 +63,12 @@ input::-ms-input-placeholder {
 /* ASIDE */
 /*================== */
 aside {
-  /*background-color: #283593 */
-  /*background-color: #3d478e */
   background-color: #4c506d;
   padding-top: 22px;
   padding-bottom: 10px;
   width: 24%;
   height: 100%;
   float: left;
-  /*overflow: hidden */
   overflow-x: hidden; }
   @media (min-width: 768px) {
     aside {
@@ -80,8 +77,6 @@ aside {
     aside {
       width: 28%; } }
   aside .search {
-    /*background-color: #303f9f */
-    /*background-color: #494f77 */
     background-color: #727697;
     padding: 5px 15px 5px;
     margin: 0 0 15px 15px;
@@ -105,9 +100,10 @@ aside {
   aside .user {
     padding: 18px 15px 18px 10px;
     width: 100%;
-    position: relative;
-    hover-background-color: #1a237e;
-    hover-cursor: pointer; }
+    position: relative; }
+    aside .user:hover {
+      background-color: #1a237e;
+      cursor: pointer; }
     aside .user .content {
       display: inline-block;
       vertical-align: super;
@@ -118,7 +114,7 @@ aside {
         display: inline-block;
         margin: 0; }
       aside .user .name-date-block .name {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 15px; }
       aside .user .name-date-block .date {
         font-size: 12px;
@@ -246,4 +242,4 @@ aside {
   color: grey;
   font-size: 1.7em; }
 
-/*# sourceMappingURL=style-2.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -6,49 +6,49 @@ $lg: "(min-width: 992px)"
 
 
 =xs
-	@media #{$xs}
-		@content
+    @media #{$xs}
+        @content
 
 =sm
-	@media #{$sm}
-		@content
+    @media #{$sm}
+        @content
 
 =md
-	@media #{$md}
-		@content
+    @media #{$md}
+        @content
 
 =lg
-	@media #{$lg}
-		@content
+    @media #{$lg}
+        @content
 
 
 
 *
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
 
 
 html, body
-	margin: 0
-	color: #eee
-	height: 100vh
-	font-family: 'Roboto', sans-serif
-	letter-spacing: 1.4px
-	position: relative
+    margin: 0
+    color: #eee
+    height: 100vh
+    font-family: 'Open Sans', sans-serif
+    letter-spacing: 1.4px
+    position: relative
 
 
 
 input::-webkit-input-placeholder  /* WebKit, Blink, Edge */
-	color:	 #ccc
+    color:     #ccc
 
 
 input:-ms-input-placeholder  /* Internet Explorer 10-11 */
-	color:	 #ccc
+    color:     #ccc
 
 input::-ms-input-placeholder  /* Microsoft Edge */
-	color:	 #ccc
+    color:     #ccc
 
 
 
@@ -56,26 +56,26 @@ input::-ms-input-placeholder  /* Microsoft Edge */
 
 .scrollbar-style-1::-webkit-scrollbar-track
 
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
-	border-radius: 10px
-	background-color: #F5F5F5
-	visibility: hidden
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    border-radius: 10px
+    background-color: #F5F5F5
+    visibility: hidden
 
 
 .scrollbar-style-1::-webkit-scrollbar
 
-	/*width: 6px*/
-	width: 10px
-	background-color: #c0c0c0
-	/*visibility: hidden*/
+    /*width: 6px*/
+    width: 10px
+    background-color: #c0c0c0
+    /*visibility: hidden*/
 
 
 .scrollbar-style-1::-webkit-scrollbar-thumb
 
-	border-radius: 10px
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
-	background-color: #6f759d
-	/*background-color: #19217a*/
+    border-radius: 10px
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+    background-color: #6f759d
+    /*background-color: #19217a*/
 
 
 
@@ -85,150 +85,132 @@ input::-ms-input-placeholder  /* Microsoft Edge */
 /*==================*/
 
 .container
-	position: fixed
-	top: 0
-	left: 0
-	height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
 
 .clearfix:after
-	content: ""
-	display: table
-	clear: both
+    content: ""
+    display: table
+    clear: both
 
 
 
 .sm-toggle-menu
-	display: block
+    transform: translateX(0%)
+    // display: block
 
 .md-toggle-menu
-	display: none
+    display: none
 
 .full-width
-	width: 100% !important
-
-
-
-
-
-
-
-
-
-
-
-
-
+    width: 100% !important
 
 
 /* ASIDE */
 /*==================*/
 aside
-	/*background-color: #283593*/
-	/*background-color: #3d478e*/
-	background-color: #4c506d
-	padding-top: 22px
-	padding-bottom: 10px
-	width: 24%
-	height: 100%
-	float: left
-	/*overflow: hidden*/
-	overflow-x: hidden
+    background-color: #4c506d
+    padding-top: 22px
+    padding-bottom: 10px
+    width: 24%
+    height: 100%
+    float: left
+    overflow-x: hidden
 
-	+md
-		width: 34%
+    +md
+        width: 34%
 
-	+lg
-		width: 28%
+    +lg
+        width: 28%
 
 
-	.search
-		/*background-color: #303f9f */
-		/*background-color: #494f77*/
-		background-color: #727697
-		padding: 5px 15px 5px
-		margin: 0 0 15px 15px
-		width: 90%
-		border-radius: 4px
+    .search
+        background-color: #727697
+        padding: 5px 15px 5px
+        margin: 0 0 15px 15px
+        width: 90%
+        border-radius: 4px
 
-	input
-		background-color: transparent
-		border: none
-		height: 20px
-		color: inherit
-		width: 83%
-		outline: none
+    input
+        background-color: transparent
+        border: none
+        height: 20px
+        color: inherit
+        width: 83%
+        outline: none
 
-		+md
-			width: 75%
+        +md
+            width: 75%
 
 
-	.fa-search
-		color: #ccc
-		margin-right: 17px
+    .fa-search
+        color: #ccc
+        margin-right: 17px
 
 
 
-	.online-users
-		/*border-top: 1px solid #bfbfbf*/
+    .online-users
+        /*border-top: 1px solid #bfbfbf*/
 
-	.user
-		padding: 18px 15px 18px 10px
-		width: 100%
-		position: relative
-
-		hover:
-			background-color: #1a237e
-			cursor: pointer
+    .user
+        padding: 18px 15px 18px 10px
+        width: 100%
+        position: relative
+        &:hover
+            background-color: #1a237e
+            cursor: pointer
 
 
 
 
-		.content
-			display: inline-block
-			vertical-align: super
-			width: 74%
+        .content
+            display: inline-block
+            vertical-align: super
+            width: 74%
 
-		.name-date-block
-			margin: 5px 0 5px
+        .name-date-block
+            margin: 5px 0 5px
 
-			.name, .user .date
-				display: inline-block
-				margin: 0
+            .name, .user .date
+                display: inline-block
+                margin: 0
 
-			.name
-				font-weight: 400
-				font-size: 15px
+            .name
+                font-weight: 600
+                font-size: 15px
 
-			.date
-				font-size: 12px
-				float: right
-				margin-top: 5px
-				color: #bbb
-
-
-		.msg-excerpt
-			font-size: 12px
-			margin: 0
-			color: #ccc
+            .date
+                font-size: 12px
+                float: right
+                margin-top: 5px
+                color: #bbb
 
 
-
-	.active-user .name
-		font-weight: 700
-
-		after:
-			content: ""
-			width: 11px
-			height: 11px
-			background-color: #6AB04C
-			border-radius: 100%
-			position: absolute
-			top: 50%
-			right: 10px
+        .msg-excerpt
+            font-size: 12px
+            margin: 0
+            color: #ccc
 
 
-	.active-conversation
-		background-color: #1a237e
+
+    .active-user .name
+        font-weight: 700
+
+        after:
+            content: ""
+            width: 11px
+            height: 11px
+            background-color: #6AB04C
+            border-radius: 100%
+            position: absolute
+            top: 50%
+            right: 10px
+
+
+    .active-conversation
+        background-color: #1a237e
 
 
 
@@ -238,17 +220,17 @@ aside
 
 
 .img
-	width: 45px
-	height: 45px
-	border-radius: 100%
-	display: inline-block
-	margin-top: 5px
-	margin-right: 5px
+    width: 45px
+    height: 45px
+    border-radius: 100%
+    display: inline-block
+    margin-top: 5px
+    margin-right: 5px
 
 
-	-webkit-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
-	-moz-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
-	box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
+    -webkit-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
+    -moz-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
+    box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.53)
 
 
 /* CHAT BOX */
@@ -256,117 +238,118 @@ aside
 
 
 .chat-box
-	float: right
-	width: 76%
-	height: 100%
-	background-color: white
-	position: relative
+    float: right
+    width: 76%
+    height: 100%
+    background-color: white
+    position: relative
 
-	+sm
-		width: 66%
+    +sm
+        width: 66%
 
-	+lg
-		width: 72%
+    +lg
+        width: 72%
 
-	.chat-head
-		height: 12%
-		border-bottom: 1px solid #E5E5E5
-		padding-top: 20px
-
-
-		.title
-			margin: 0
-			color: #111
-			display: inline-block
-
-		.menu-icon
-			float: right
-			cursor: pointer
+    .chat-head
+        height: 12%
+        border-bottom: 1px solid #E5E5E5
+        padding-top: 20px
 
 
+        .title
+            margin: 0
+            color: #111
+            display: inline-block
 
-	.allmsgs
-		list-style: none
-		/* height: 76.5% */
-		height: 75%
-		overflow-x: hidden
-		margin: 0
-		padding-bottom: 15px
-
-		.msg
-			padding-top: 12px
-			padding-bottom: 12px
-
-			.img
-				vertical-align: bottom
-				margin-bottom: 8px
-
-
-			.name
-				margin: 0
+        .menu-icon
+            float: right
+            cursor: pointer
 
 
 
-			.msg-data
-				max-width: 80%
-				font-size: 14px
-				font-weight: 400
-				font-family: inherit
-				line-height: 19px
-				display: inline-block
-				margin: 0
-				padding: 15px
-				border-radius: 10px
-				white-space: pre-wrap
-				word-wrap: break-word
-				vertical-align: middle
-				color: black
-				background-color: #F1F0F0
+    .allmsgs
+        list-style: none
+        /* height: 76.5% */
+        height: 75%
+        overflow-x: hidden
+        margin: 0
+        padding-bottom: 15px
 
-				+xs
-					max-width: 76%
+        .msg
+            padding-top: 12px
+            padding-bottom: 12px
+
+            .img
+                vertical-align: bottom
+                margin-bottom: 8px
 
 
-	.chat-footer
-		width: 100%
-		/* height: 11.5% */
-		height: 13%
-		background-color: #F9F9F9
-		text-align: center
-		position: relative
+            .name
+                margin: 0
 
 
-		> div
-			position: absolute
-			width: 100%
-			height: 51%
-			top: 26%
+
+            .msg-data
+                max-width: 80%
+                font-size: 14px
+                font-weight: 400
+                font-family: inherit
+                line-height: 19px
+                display: inline-block
+                margin: 0
+                padding: 15px
+                border-radius: 10px
+                white-space: pre-wrap
+                word-wrap: break-word
+                vertical-align: middle
+                color: black
+                background-color: #F1F0F0
+
+                +xs
+                    max-width: 76%
 
 
-	.msg-box
-		width: 80%
-		height: 100%
-		// max-height: 100px
-		// overflow-x: hidden
-		vertical-align: middle
-		padding: 10px
-		margin-left: 5px
-		margin-right: 5px
-		// margin-top: 5px
-		border: 1px solid black
+    .chat-footer
+        width: 100%
+        /* height: 11.5% */
+        height: 13%
+        background-color: #F9F9F9
+        text-align: center
+        position: relative
 
-		+xs
-			width: 75%
 
-	.chat-box-container
-		padding-left: 35px
-		padding-right: 35px
+        > div
+            position: absolute
+            width: 100%
+            height: 51%
+            top: 26%
 
-		+xs
-			padding-left: 10px
-			padding-right: 10px
+
+    .msg-box
+        width: 80%
+        height: 100%
+        // max-height: 100px
+        // overflow-x: hidden
+        vertical-align: middle
+        padding: 10px
+        margin-left: 5px
+        margin-right: 5px
+        // margin-top: 5px
+        border: 1px solid black
+
+
+        +xs
+            width: 75%
+
+    .chat-box-container
+        padding-left: 35px
+        padding-right: 35px
+
+        +xs
+            padding-left: 10px
+            padding-right: 10px
 
 
 .emoticons
-	color: grey
-	font-size: 1.7em
+    color: grey
+    font-size: 1.7em
